@@ -1,0 +1,20 @@
+{
+    "asset": "650f3087f64062b4b847f75fe424359f",
+    "fileName": "0199b2c7-2508-785f-ab50-b3338758cf1d.png",
+    "prompt": "cute ghost, big, bright, for kids, indonesia ghosts, cute kuntilanak",
+    "negativePrompt": "blurry",
+    "model": "de7dd170-a573-4d45-9da2-89b1ff778408",
+    "modelName": "3D Cartoon Characters",
+    "customSeed": -1,
+    "w3CTraceId": "cf1901240624959becd846d4fb64a06e",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}
