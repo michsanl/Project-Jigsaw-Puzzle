@@ -4,9 +4,10 @@ using UnityEngine;
 public class PuzzleManager : MonoBehaviour
 {
     [SerializeField] private float snapRadius = 30;
+    [SerializeField] private PuzzleSlot[] slots;
+    [SerializeField] private PuzzlePiece[] pieces;
 
     public static PuzzleManager Instance;
-    public PuzzleSlot[] slots;
 
     void Awake()
     {
