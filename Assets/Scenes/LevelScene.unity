@@ -460,6 +460,12 @@ MonoBehaviour:
   - {fileID: 2051958011}
   - {fileID: 1481803029}
   - {fileID: 1709956744}
+  datas:
+  - {fileID: 11400000, guid: aa43d6be427a0764dbc66f753e0485a1, type: 2}
+  - {fileID: 11400000, guid: da132fd24baa96646b355defefa369b4, type: 2}
+  - {fileID: 11400000, guid: 930a0163eb0dc3848b430d22d73e399e, type: 2}
+  - {fileID: 11400000, guid: c36ae24a39c9c30498e7a0fb1fe36455, type: 2}
+  puzzleImage: {fileID: 348261203}
 --- !u!114 &185483458
 MonoBehaviour:
   m_ObjectHideFlags: 0

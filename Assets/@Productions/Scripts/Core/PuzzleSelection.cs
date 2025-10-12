@@ -2,5 +2,5 @@ using UnityEngine;
 
 public static class PuzzleSelection
 {
-    public static int SelectedPuzzleIndex;
+    public static int SelectedPuzzleIndex = 0;
 }

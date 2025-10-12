@@ -1,13 +1,19 @@
 using DG.Tweening;
+using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PuzzleManager : MonoBehaviour
 {
     [SerializeField] private float snapRadius = 30;
     [SerializeField] private PuzzleSlot[] slots;
     [SerializeField] private PuzzlePiece[] pieces;
+    [SerializeField] private PuzzleData[] datas;
+    [SerializeField] private Image puzzleImage;
 
     public static PuzzleManager Instance;
+
+    private PuzzleData selectedData;
 
     void Awake()
     {
@@ -19,6 +25,19 @@ public class PuzzleManager : MonoBehaviour
         Instance = this;
     }
 
+    private void Start()
+    {
+        InitializePuzzle();
+    }
+
+    private void InitializePuzzle()
+    {
+        selectedData = datas[PuzzleSelection.SelectedPuzzleIndex];
+        Debug.Log($"Selected puzzle index is: {selectedData}");
+        InitializePuzzleImage();
+        InitializePuzzlePieces();
+    }
+
     public bool CheckPiecePlacement(PuzzlePiece piece)
     {
         foreach (var slot in slots)
@@ -28,21 +47,29 @@ public class PuzzleManager : MonoBehaviour
             if (GetDistanceToSlot(piece, slot) > snapRadius) // tolerance in pixels
                 continue;
 
-            // Snap piece into correct slot
             piece.transform.DOMove(slot.transform.position, 0.5f).SetEase(Ease.OutQuad);
-            //piece.GetComponent<RectTransform>()
-            //    .DOLocalMove(slot.transform.position, 0.5f)
-            //    .SetEase(Ease.OutQuad);
-            Debug.Log($"Piece {piece.ID} placed correctly!");
             return true;
         }
         return false;
     }
 
+    private void InitializePuzzleImage()
+    {
+        puzzleImage.sprite = selectedData.WholeSprite;
+    }
+
+    private void InitializePuzzlePieces()
+    {
+        int index;
+        for (int i = 0; i < selectedData.PiecesSprite.Length; i++)
+        {
+            index = i;
+            pieces[index].Initialize(index, selectedData.PiecesSprite[index]);
+        }
+    }
+
     private static float GetDistanceToSlot(PuzzlePiece piece, PuzzleSlot slot)
     {
-
-        // Check if piece overlaps slot in screen space
         return Vector2.Distance(
             piece.GetComponent<RectTransform>().position,
             slot.rectTransform.position
