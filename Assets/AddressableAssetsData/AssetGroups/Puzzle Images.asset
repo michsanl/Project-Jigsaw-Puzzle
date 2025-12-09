@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Puzzle Images
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: Puzzle Images
+  m_GUID: 0e8dea79e99441546bdb43d8a852c1fb
+  m_SerializeEntries:
+  - m_GUID: 0e9076c1a8d02f24e98be29392414c19
+    m_Address: Assets/@Productions/Arts/Crystal Atelier.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2b8ee8696648d1643b79017cd43b8c98
+    m_Address: Assets/@Productions/Arts/Wheels Industry.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4d2aa63797013784bb6f8a4b78b0f0d4
+    m_Address: Assets/@Productions/Arts/Atelier Logic.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4db153407102d6846a83caa5d15c669a
+    m_Address: Assets/@Productions/Arts/Allas Workshop.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6601452d78a664a4891d3636ff901ca2
+    m_Address: Assets/@Productions/Arts/Old Boys Workshop.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6d84d75edc54cb6479e03a4a10a1f14c
+    m_Address: Assets/@Productions/Arts/Ranga Workshop.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 73f33b0ec555efa4ba6d7b0423c961cf
+    m_Address: Assets/@Productions/Arts/Furioso.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 778413268e71e3948badd88164ce0a75
+    m_Address: Assets/@Productions/Arts/Zelkova Workshop.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cb3f04f6cfa3ed14ea0a09c100779756
+    m_Address: Assets/@Productions/Arts/Durandal.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f6d6923d394cff348b1a24421b6ec739
+    m_Address: Assets/@Productions/Arts/Mook Workshop.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 6d22ba8170c73dd48b5ffe5b3ea4c6ef, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 1e2c2773fcd70f942ac7d42df600c33d, type: 2}
+    - {fileID: 11400000, guid: 0df3213df9f6f334f9ba4580ee10d410, type: 2}

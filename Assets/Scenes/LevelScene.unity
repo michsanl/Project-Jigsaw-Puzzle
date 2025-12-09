@@ -332,7 +332,6 @@ RectTransform:
   m_Children:
   - {fileID: 1287719649}
   - {fileID: 1844634853}
-  - {fileID: 1003213424}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -351,7 +350,7 @@ GameObject:
   - component: {fileID: 162203495}
   - component: {fileID: 162203496}
   m_Layer: 5
-  m_Name: Board
+  m_Name: PuzzleBoard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -449,7 +448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c444191f3d83af43ab6f6726c968ccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleManager
-  snapRadius: 30
+  snapRadius: 500
   slots:
   - {fileID: 688202149}
   - {fileID: 64572280}
@@ -1150,7 +1149,7 @@ GameObject:
   - component: {fileID: 719534926}
   - component: {fileID: 719534927}
   m_Layer: 5
-  m_Name: Pieces
+  m_Name: PiecesBoard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1169,6 +1168,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1025994081}
+  - {fileID: 1003213424}
   m_Father: {fileID: 1844634853}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1228,11 +1228,11 @@ RectTransform:
   - {fileID: 2051958008}
   - {fileID: 1481803026}
   - {fileID: 1709956741}
-  m_Father: {fileID: 122019540}
+  m_Father: {fileID: 719534926}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -392.50003, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1025994080
@@ -1322,7 +1322,7 @@ GameObject:
   - component: {fileID: 1287719651}
   - component: {fileID: 1287719650}
   m_Layer: 5
-  m_Name: Background
+  m_Name: MainBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1360,7 +1360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.504717, g: 0.9100495, b: 1, a: 0.68235296}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
