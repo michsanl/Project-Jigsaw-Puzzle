@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "PieceData", menuName = "Scriptable Objects/PieceData")]
-public class PieceData : ScriptableObject
+public class PuzzlePieceData : ScriptableObject
 {
     public string pieceId;
 

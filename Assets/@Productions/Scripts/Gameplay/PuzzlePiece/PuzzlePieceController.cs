@@ -5,10 +5,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class PieceController : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerDownHandler, IPointerUpHandler
+public class PuzzlePieceController : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerDownHandler, IPointerUpHandler
 {
-    [SerializeField] private PieceData data;
-    [SerializeField] private PieceView view;
+    [SerializeField] private PuzzlePieceData data;
+    [SerializeField] private PuzzlePieceView view;
 
     public int ID = 0;
 
