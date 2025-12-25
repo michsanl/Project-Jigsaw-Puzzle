@@ -1,13 +1,10 @@
 using DG.Tweening;
-using DG.Tweening.Core; // Optional, for DOTween extension methods
-using DG.Tweening.Plugins.Options; // Optional, for DOTween extension methods
+using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class PieceController : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerDownHandler, IPointerUpHandler
+public class PuzzlePiece : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerDownHandler, IPointerUpHandler
 {
-    [SerializeField] private PieceData data;
     [SerializeField] private PieceView view;
 
     public int ID = 0;
