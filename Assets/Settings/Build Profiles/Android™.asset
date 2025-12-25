@@ -709,7 +709,7 @@ MonoBehaviour:
     - line: '|   webWasm2023: 0'
     - line: '|   webEnableSubmoduleStrippingCompatibility: 0'
     - line: '|   scriptingDefineSymbols:'
-    - line: '|     Android: DOTWEEN'
+    - line: '|     Android: DOTWEEN;APP_UI_EDITOR_ONLY'
     - line: '|     EmbeddedLinux: DOTWEEN'
     - line: '|     GameCoreScarlett: DOTWEEN'
     - line: '|     GameCoreXboxOne: DOTWEEN'

@@ -38,6 +38,11 @@ public class PuzzleManager : MonoBehaviour
         InitializePuzzlePieces();
     }
 
+    public Vector2 GetSlotPosition(int index)
+    {
+        return slots[index].rectTransform.position;
+    }
+
     public bool CheckPiecePlacement(PuzzlePiece piece)
     {
         foreach (var slot in slots)

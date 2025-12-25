@@ -1,5 +1,6 @@
 using DG.Tweening;
 using Unity.VisualScripting;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -8,9 +9,11 @@ public class PuzzlePiece : MonoBehaviour, IDragHandler, IEndDragHandler, IPointe
     [SerializeField] private PieceView view;
 
     public int ID = 0;
+    public float snapRadius = 100f;
 
     private Sprite sprite;
     private Vector2 initialPosition;
+    private Vector2 correctPosition;
     private RectTransform rectTransform;
     private Canvas canvas;
 
@@ -27,6 +30,7 @@ public class PuzzlePiece : MonoBehaviour, IDragHandler, IEndDragHandler, IPointe
         this.sprite = sprite;
 
         view.UpdateImage(sprite);
+        correctPosition = PuzzleManager.Instance.GetSlotPosition(ID);
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -62,11 +66,13 @@ public class PuzzlePiece : MonoBehaviour, IDragHandler, IEndDragHandler, IPointe
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        if (PuzzleManager.Instance.CheckPiecePlacement(this))
+        if (Vector2.Distance(rectTransform.position, correctPosition) < snapRadius)
         {
-            return;
+            rectTransform.DOAnchorPos(correctPosition, 0.5f).SetEase(Ease.OutQuad);
         }
-
-        rectTransform.DOAnchorPos(initialPosition, 0.2f).SetEase(Ease.OutQuad);
+        else
+        {
+            rectTransform.DOAnchorPos(initialPosition, 0.2f).SetEase(Ease.OutQuad);
+        }
     }
 }
