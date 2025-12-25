@@ -7,7 +7,7 @@ public class PuzzleManager : MonoBehaviour
 {
     [SerializeField] private float snapRadius = 30;
     [SerializeField] private PuzzleSlot[] slots;
-    [SerializeField] private PuzzlePieceController[] pieces;
+    [SerializeField] private PieceController[] pieces;
     [SerializeField] private PuzzleData[] datas;
     [SerializeField] private Image puzzleImage;
 
@@ -38,7 +38,7 @@ public class PuzzleManager : MonoBehaviour
         InitializePuzzlePieces();
     }
 
-    public bool CheckPiecePlacement(PuzzlePieceController piece)
+    public bool CheckPiecePlacement(PieceController piece)
     {
         foreach (var slot in slots)
         {
@@ -68,7 +68,7 @@ public class PuzzleManager : MonoBehaviour
         }
     }
 
-    private static float GetDistanceToSlot(PuzzlePieceController piece, PuzzleSlot slot)
+    private static float GetDistanceToSlot(PieceController piece, PuzzleSlot slot)
     {
         return Vector2.Distance(
             piece.GetComponent<RectTransform>().position,

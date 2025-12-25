@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PuzzlePieceView : MonoBehaviour
+public class PieceView : MonoBehaviour
 {
     [SerializeField] private Image image;
 
